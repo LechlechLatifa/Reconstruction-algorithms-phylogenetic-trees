@@ -11,6 +11,16 @@ Within this structure:
        - The count of mutations.
        - An estimation of the time taken for evolution.
 
+Distance-Based Methods: 
+A distance matrix M is said to be a metric if and only if :
+* it is not negtive  $M_{ij} ≥ 0 $, for all  $i, j$
+* it is symmetric: $M_{ij} = M_{ji}$ and M_{ii} = 0, for all $i, j$
+* it satisfies the triangle inequality: $M_{ij}$ + $M_{jk} ≥ M_{ik}$, for all $i, j, k$
+
+A distance matrix M can be additive ultrametric
+
+
+UPGMA (Unweighted Pair Group Method with Arithmetic Mean)
 
 Resources: 
 * [Algorithms in Bioinformatics: Lecture 15-16: Phylogeny Reconstruction by Lucia Moura](https://www.site.uottawa.ca/~lucia/courses/5126-11/lecturenotes/16-17PhylogenyReconstruction.pdf)
