@@ -7,3 +7,6 @@ Phylogenetic trees are biological diagrams that show evolutionary relationships 
 Within this structure:
 - A node represents the most recent common ancestor.
 - A leaf denotes an existing organism.
+- The edges, or links, can be associated weights. These weights signify:
+       - The count of mutations.
+       - An estimation of the time taken for evolution.
