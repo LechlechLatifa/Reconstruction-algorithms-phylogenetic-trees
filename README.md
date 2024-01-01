@@ -10,3 +10,7 @@ Within this structure:
 - The edges, or links, can be associated weights. These weights signify:
        - The count of mutations.
        - An estimation of the time taken for evolution.
+
+
+Resources: 
+https://www.site.uottawa.ca/~lucia/courses/5126-11/lecturenotes/16-17PhylogenyReconstruction.pdf 
