@@ -13,4 +13,6 @@ Within this structure:
 
 
 Resources: 
-https://www.site.uottawa.ca/~lucia/courses/5126-11/lecturenotes/16-17PhylogenyReconstruction.pdf 
+* [Algorithms in Bioinformatics: Lecture 15-16: Phylogeny Reconstruction by Lucia Moura](https://www.site.uottawa.ca/~lucia/courses/5126-11/lecturenotes/16-17PhylogenyReconstruction.pdf)
+* [Algorithmes de reconstruction des arbres phylogénétiques by Alessandra Carbone] (https://www.ihes.fr/~carbone/L4_AAGB_Arbres_Phylogenetiques.pdf)
+
