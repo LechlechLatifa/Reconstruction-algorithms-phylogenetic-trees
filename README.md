@@ -21,19 +21,19 @@ Phylogeny reconstruction refers to inferring the evolutionary relationships amon
   * Unweighted Pair Group Method with Arithmetic Mean (UPGMA), clustering
   * Neighbor Joining (NJ)
 
- A distance matrix M is said to be a metric if and only if :
- * it is not negtive  $M_{ij} ≥ 0 $, for all  $i, j$
- * it is symmetric: $M_{ij} = M_{ji}$ and $M_{ii} = 0$, for all $i, j$
- * it satisfies the triangle inequality: $M_{ij}$ + $M_{jk} ≥ M_{ik}$, for all $i, j, k$
+  A distance matrix M is said to be a metric if and only if :
+  * it is not negtive  $M_{ij} ≥ 0 $, for all  $i, j$
+  * it is symmetric: $M_{ij} = M_{ji}$ and $M_{ii} = 0$, for all $i, j$
+  * it satisfies the triangle inequality: $M_{ij}$ + $M_{jk} ≥ M_{ik}$, for all $i, j, k$
+
+  distance matrix M can be additive ultrametric
+  In the context of molecular phylogenetics, an additive matrix is a technique for displaying the evolutionary distances between sequences. This matrix shows the evolutionary changes that have taken place between various biological sequences, including sequences of DNA, RNA, and proteins.
+  Based on:
+  * Buneman’s 4-point condition Theorem:  M is additive if and only if the 4-point condition is satisfied
  
- A distance matrix M can be additive ultrametric
- In the context of molecular phylogenetics, an additive matrix is a technique for displaying the evolutionary distances between sequences. This matrix shows the evolutionary changes that have taken place between various biological sequences, including sequences of DNA, RNA, and proteins.
- Based on:
- * Buneman’s 4-point condition Theorem:  M is additive if and only if the 4-point condition is satisfied
-
-
-
-UPGMA (Unweighted Pair Group Method with Arithmetic Mean)
+ 
+ 
+  UPGMA (Unweighted Pair Group Method with Arithmetic Mean)
 
 
 
