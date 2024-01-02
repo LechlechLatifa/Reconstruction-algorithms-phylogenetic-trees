@@ -14,7 +14,7 @@ Within this structure:
 
 Phylogeny reconstruction refers to inferring the evolutionary relationships among different species or groups. Numerous methodologies are employed within this field, delineated by their categorization based on input data types:
 * Character based methods take as input a character state matrix.
-  * Maximum Parsimony
+  * Maximum Parsimony (Fitch algorithm, Sankoff algorithm)
   * Maximum Likelihood
   * Bayesian Inference
 * Distance based methods take as input a distance matrix, this is determined by calculating the evolutionary distance or dissimilarity between the taxa.
