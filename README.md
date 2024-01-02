@@ -32,7 +32,7 @@ Phylogeny reconstruction refers to inferring the evolutionary relationships amon
  
  
 ## Unweighted Pair Group Method with Arithmetic Mean (UPGMA)
-## UPGMA (Unweighted Pair Group Method with Arithmetic Mean)
+## Neighbor Joining (NJ)
 
 
 
