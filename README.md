@@ -8,8 +8,8 @@ Within this structure:
 - A node represents the most recent common ancestor.
 - A leaf denotes an existing organism.
 - The edges, or links, can be associated weights. These weights signify:
-       - The count of mutations.
-       - An estimation of the time taken for evolution.
+  - The count of mutations.
+  - An estimation of the time taken for evolution.
 
 
 Phylogeny reconstruction refers to inferring the evolutionary relationships among different species or groups. Numerous methodologies are employed within this field, delineated by their categorization based on input data types:
@@ -18,8 +18,8 @@ Phylogeny reconstruction refers to inferring the evolutionary relationships amon
   * Maximum Likelihood
   * Bayesian Inference
 * Distance based methods take as input a distance matrix, this is determined by calculating the evolutionary distance or dissimilarity between the taxa.
-      * Unweighted Pair Group Method with Arithmetic Mean (UPGMA), clustering
-      * Neighbor Joining (NJ)
+  * Unweighted Pair Group Method with Arithmetic Mean (UPGMA), clustering
+  * Neighbor Joining (NJ)
 
  A distance matrix M is said to be a metric if and only if :
  * it is not negtive  $M_{ij} ≥ 0 $, for all  $i, j$
