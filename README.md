@@ -26,10 +26,9 @@ Phylogeny reconstruction refers to inferring the evolutionary relationships amon
   * it is symmetric: $M_{ij} = M_{ji}$ and $M_{ii} = 0$, for all $i, j$
   * it satisfies the triangle inequality: $M_{ij}$ + $M_{jk} ≥ M_{ik}$, for all $i, j, k$
 
-  distance matrix M can be additive ultrametric
-  In the context of molecular phylogenetics, an additive matrix is a technique for displaying the evolutionary distances between sequences. This matrix shows the evolutionary changes that have taken place between various biological sequences, including sequences of DNA, RNA, and proteins.
-  Based on:
-  * Buneman’s 4-point condition Theorem:  M is additive if and only if the 4-point condition is satisfied
+  Although they both serve as matrices for representing distances or differences between objects, additive and ultrametric matrices have different underlying structures and properties:
+  * In an additive matrix, the distances between objects obey the triangle inequality, which means that the direct distance between two objects is less than or equal to the sum of their distances through a third object. Based on Buneman’s 4-point condition Theorem:  M is additive if and only if the 4-point condition is satisfied. It doesn't necessarily imply a hierarchical structure.
+  * On the other hand, an ultrametric matrix satisfies a stronger condition known as ultrametricity. matrices often represent hierarchical relationships among entities. Based on 3-point condition Theorem: M is ultrametric if and only if the 3-point condition is satisfied.
  
  
  
