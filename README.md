@@ -31,8 +31,8 @@ Phylogeny reconstruction refers to inferring the evolutionary relationships amon
   * On the other hand, an ultrametric matrix satisfies a stronger condition known as ultrametricity. matrices often represent hierarchical relationships among entities. Based on 3-point condition Theorem: M is ultrametric if and only if the 3-point condition is satisfied.
  
  
- 
-  UPGMA (Unweighted Pair Group Method with Arithmetic Mean)
+## Unweighted Pair Group Method with Arithmetic Mean (UPGMA)
+## UPGMA (Unweighted Pair Group Method with Arithmetic Mean)
 
 
 
