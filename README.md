@@ -40,10 +40,9 @@ UPGMA is a clustring algorithm, join twi point into on cluster if they are near 
 Steps: 
 1. **Find the Closest Pair** $(i,j)$ with the smallest distance $d_{ij}$ and create a new cluster u that joins clusters $i$ and $j$.
    *  Define the height (i.e. distance from leaves) of $u$ to be $l_{ij} := \frac{d_{ij}}{2}$
-   * The distance betweeb two clusters $C_{i}$ and $C_{j}$ is calculated as following:
-   $$d_{ij}= \frac{1}{|C_{i}| \times |C_{j}|} \sum_{p \in C_{i}, q \in C_{j}} d_{pq}$$
-   * Note that if $C_{k} = C_{i} \cup C_{j}$, then the distance between $C_{k}$ and another cluster $C_{l}$ is:
-   $$d_{ij}= \frac{d_{il}|C_{i}| + d_{jl}|C_{j}|}{|C_{i}| + |C_{j}|}$$
+   * The distance between two clusters $C_{i}$ and $C_{j}$ is calculated as following:
+   $$d_{ij}= \frac{1}{|C_{i}|.|C_{j}|} \sum_{p \in C_{i}, q \in C_{j}} d_{pq}$$
+  
 3. **Update the Matrix** To represent the newly created cluster, replace the rows and columns that correspond to the two clustered items with a new row and column. Based on the average distance from the newly created cluster, the distances to the other objects in the matrix are computed.
 4. **Repeat** until one cluster is reached.
 
@@ -59,4 +58,5 @@ Resources:
 * [Algorithms in Bioinformatics: Lecture 15-16: Phylogeny Reconstruction by Lucia Moura](https://www.site.uottawa.ca/~lucia/courses/5126-11/lecturenotes/16-17PhylogenyReconstruction.pdf)
 * [Algorithmes de reconstruction des arbres phylogénétiques by Alessandra Carbone](https://www.ihes.fr/~carbone/L4_AAGB_Arbres_Phylogenetiques.pdf)
 * [Molecular Phylogenetics (Hannes Luz)](https://www.molgen.mpg.de/3373145/evolution.pdf)
+* [UPGMA Worked Example](http://www.slimsuite.unsw.edu.au/teaching/upgma/)
 
