@@ -58,10 +58,12 @@ Steps:
 2. **Compute $r^{'}_{i}$**for each terminal node using the following formula: $$r^{'}_{i} = \frac{\sum d_{ij}{n-2}$$ where n is the number of texa.
 3. **Compute D' matrix** for each terminal node by applying the formula that follows: $d^{'}_{ij} = d_{ij} -r^{'}_{i} -r^{'}_{j}$
 4. **Find the Closest Pair** $(i,j)$ with the smallest distance $d_{ij}$
-5. **Calculate branch length** $$v_{i} = 0.5 \times $d_{ij}$ + 0.5 \times (r^{'}_{i} -r^{'}_{j}) $$ $$v_{j} = 0.5 \times $d_{ij}$ + 0.5 \times (r^{'}_{j}-r^{'}_{i})$$
-6. **Upadate the distance matrix** Create a new row and column and replace the ones that match the two grouped items. The distance between the new cluster and the others terminal node is calculated as follow:
+5. **Calculate branch length**
+   $v_{i} = 0.5 \times d_{ij} + 0.5 \times (r^{\textquotesingle}_{i} -r^{\textquotesingle}_{j})$
+   $v_{j} = 0.5 \times $d_{ij}$ + 0.5 \times (r^{\textquotesingle}_{j}-r^{\textquotesingle}_{i})$
+7. **Upadate the distance matrix** Create a new row and column and replace the ones that match the two grouped items. The distance between the new cluster and the others terminal node is calculated as follow:
    $$d_{ij,k} = \frac{d_{ik}+d_{jk}-d_{ij}}{2}$$
-7. **Repeat** the steps from step 2 until one cluster is reached.
+8. **Repeat** the steps from step 2 until one cluster is reached.
 
 
 The complexity of Neighbor Joining (NJ) algorithm is  $O(n^{3})$, where n is the number of sequences or taxa
