@@ -55,12 +55,12 @@ The Neighbor-Joining (NJ) algorithm (Saitou and Nei, 1987) is a polynomial-time 
 
 Steps:
 1. **Mismatche matrix** start with a matrix of pairwise distances between all taxa.
-2. **Compute $r^{'}_{i}$**for each terminal node using the following formula: $$r^{'}_{i} = \frac{\sum d_{ij}{n-2}$$ where n is the number of texa.
-3. **Compute D' matrix** for each terminal node by applying the formula that follows: $d^{'}_{ij} = d_{ij} -r^{'}_{i} -r^{'}_{j}$
+2. **Compute $r^{\textquotesingle}_{i}$**for each terminal node using the following formula: $r^{\textquotesingle}_{i} = \frac{\sum d_{ij}{n-2}$ where n is the number of texa.
+3. **Compute D' matrix** for each terminal node by applying the formula that follows: $d^{\textquotesingle}_{ij} = d_{ij} -r^{\textquotesingle}_{i} -r^{\textquotesingle}_{j}$
 4. **Find the Closest Pair** $(i,j)$ with the smallest distance $d_{ij}$
 5. **Calculate branch length**
    $v_{i} = 0.5 \times d_{ij} + 0.5 \times (r^{\textquotesingle}_{i} -r^{\textquotesingle}_{j})$
-   $v_{j} = 0.5 \times $d_{ij}$ + 0.5 \times (r^{\textquotesingle}_{j}-r^{\textquotesingle}_{i})$
+   $v_{j} = 0.5 \times d_{ij} + 0.5 \times (r^{\textquotesingle}_{j}-r^{\textquotesingle}_{i})$
 7. **Upadate the distance matrix** Create a new row and column and replace the ones that match the two grouped items. The distance between the new cluster and the others terminal node is calculated as follow:
    $$d_{ij,k} = \frac{d_{ik}+d_{jk}-d_{ij}}{2}$$
 8. **Repeat** the steps from step 2 until one cluster is reached.
