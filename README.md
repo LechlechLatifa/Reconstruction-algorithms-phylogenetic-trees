@@ -55,7 +55,7 @@ The Neighbor-Joining (NJ) algorithm (Saitou and Nei, 1987) is a polynomial-time 
 
 Steps:
 1. **Mismatche matrix** start with a matrix of pairwise distances between all taxa.
-2. **Compute $r^{\textquotesingle}_{i}$**for each terminal node using the following formula: $r^{\textquotesingle}_{i} = \frac{\sum d_{ij}{n-2}$ where n is the number of texa.
+2. **Compute $r^{\textquotesingle}_{i}$**for each terminal node using the following formula: $r^{\textquotesingle}_{i} = \frac{\sum d_{ij}}{n-2}$ where n is the number of texa.
 3. **Compute D' matrix** for each terminal node by applying the formula that follows: $d^{\textquotesingle}_{ij} = d_{ij} -r^{\textquotesingle}_{i} -r^{\textquotesingle}_{j}$
 4. **Find the Closest Pair** $(i,j)$ with the smallest distance $d_{ij}$
 5. **Calculate branch length**
