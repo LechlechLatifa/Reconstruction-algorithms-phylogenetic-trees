@@ -38,21 +38,38 @@ UPGMA is a clustring algorithm, join twi point into on cluster if they are near 
 * Arithmetic Mean : pairwise distances to each group (clade) are mean distances to all members of that group
 
 Steps: 
-1. **Find the Closest Pair** $(i,j)$ with the smallest distance $d_{ij}$ and create a new cluster u that joins clusters $i$ and $j$.
+1. Align & name
+2. **Mismatche matrix** compare sequences using pairwise sequence alignment and count the mismatches and records them in the mismatche matrix
+3. **Find the Closest Pair** $(i,j)$ with the smallest distance $d_{ij}$ and create a new cluster u that joins clusters $i$ and $j$.
    *  Define the height (i.e. distance from leaves) of $u$ to be $l_{ij} := \frac{d_{ij}}{2}$
    * The distance between two clusters $C_{i}$ and $C_{j}$ is calculated as following:
    $$d_{ij}= \frac{1}{|C_{i}|.|C_{j}|} \sum_{p \in C_{i}, q \in C_{j}} d_{pq}$$
   
-3. **Update the Matrix** To represent the newly created cluster, replace the rows and columns that correspond to the two clustered items with a new row and column. Based on the average distance from the newly created cluster, the distances to the other objects in the matrix are computed.
-4. **Repeat** until one cluster is reached.
+4. **Update the Matrix** To represent the newly created cluster, replace the rows and columns that correspond to the two clustered items with a new row and column. Based on the average distance from the newly created cluster, the distances to the other objects in the matrix are computed.
+5. **Repeat** step 3 and 4 until one cluster is reached.
 
 The complexity of UPGMA is $O(n^{2})$: there are n-1 iterations, with $O(n)$ operations performed in each.
 
 ## Neighbor Joining (NJ)
+The Neighbor-Joining (NJ) algorithm (Saitou and Nei, 1987) is a polynomial-time phylogenetic tree construction method. It is agglomerative, so it constructs ancestral relationships between taxa by clustering the most closely related taxa at each step until a complete phylogeny is formed.[[2]](https://www.frontiersin.org/articles/10.3389/fgene.2020.584785/full#:~:text=The%20Neighbor%2DJoining%20(NJ),a%20complete%20phylogeny%20is%20formed.)
+
+Steps:
+1. **Mismatche matrix** start with a matrix of pairwise distances between all taxa.
+2. **Compute $r^{\textquotesingle}_{i}$**for each terminal node using the following formula:
+   $$r^{\textquotesingle}_{i} = \frac{ \sum d_{ij}}{n-2}$$
+   where n is the number of texa.
+4. **Compute D' matrix** for each terminal node by applying the formula that follows:
+   $$d^{\textquotesingle}_{ij} = d_{ij} -r^{\textquotesingle}_{i} -r^{\textquotesingle}_{j}$$
+6. **Find the Closest Pair** $(i,j)$ with the smallest distance $d_{ij}$
+7. **Calculate branch length**
+   $v_{i} = 0.5 \times d_{ij} + 0.5 \times (r^{\textquotesingle}_{i} -r^{\textquotesingle}_{j})$
+   $v_{j} = 0.5 \times d_{ij} + 0.5 \times (r^{\textquotesingle}_{j}-r^{\textquotesingle}_{i})$
+8. **Upadate the distance matrix** Create a new row and column and replace the ones that match the two grouped items. The distance between the new cluster and the others terminal node is calculated as follow:
+   $$d_{ij,k} = \frac{d_{ik}+d_{jk}-d_{ij}}{2}$$
+9. **Repeat** the steps from step 2 until one cluster is reached.
 
 
-
-
+The complexity of Neighbor Joining (NJ) algorithm is  $O(n^{3})$, where n is the number of sequences or taxa
 
 Resources: 
 * [Algorithms in Bioinformatics: Lecture 15-16: Phylogeny Reconstruction by Lucia Moura](https://www.site.uottawa.ca/~lucia/courses/5126-11/lecturenotes/16-17PhylogenyReconstruction.pdf)
