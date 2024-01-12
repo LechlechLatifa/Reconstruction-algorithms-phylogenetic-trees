@@ -82,3 +82,4 @@ Resources:
 * [Molecular Phylogenetics (Hannes Luz)](https://www.molgen.mpg.de/3373145/evolution.pdf)
 * [UPGMA Worked Example](http://www.slimsuite.unsw.edu.au/teaching/upgma/)
 * [Sankoff and Fitch Algorithms](https://cs.rhodes.edu/~welshc/CS342/S20/SankoffFitchDetails.pdf)
+https://pbil.univ-lyon1.fr/members/perriere/cours/EGOISt/Cours.pdf 
