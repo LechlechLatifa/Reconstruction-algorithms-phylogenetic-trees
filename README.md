@@ -71,9 +71,14 @@ Steps:
 
 The complexity of Neighbor Joining (NJ) algorithm is  $O(n^{3})$, where n is the number of sequences or taxa
 
+## Weighted Rooted Small Parsimony Problem (WRSPP)
+### Sankoff ’s Algorithm (1975)
+## Unweighted Rooted Small Parsimony Problem (URSPP)
+### Fitch’s Algorithm (1971)
+
 Resources: 
 * [Algorithms in Bioinformatics: Lecture 15-16: Phylogeny Reconstruction by Lucia Moura](https://www.site.uottawa.ca/~lucia/courses/5126-11/lecturenotes/16-17PhylogenyReconstruction.pdf)
 * [Algorithmes de reconstruction des arbres phylogénétiques by Alessandra Carbone](https://www.ihes.fr/~carbone/L4_AAGB_Arbres_Phylogenetiques.pdf)
 * [Molecular Phylogenetics (Hannes Luz)](https://www.molgen.mpg.de/3373145/evolution.pdf)
 * [UPGMA Worked Example](http://www.slimsuite.unsw.edu.au/teaching/upgma/)
-
+* [Sankoff and Fitch Algorithms](https://cs.rhodes.edu/~welshc/CS342/S20/SankoffFitchDetails.pdf)
