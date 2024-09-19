@@ -62,8 +62,8 @@ Steps:
    $$d^{\textquotesingle}_{ij} = d_{ij} -r^{\textquotesingle}_{i} -r^{\textquotesingle}_{j}$$
 6. **Find the Closest Pair** $(i,j)$ with the smallest distance $d_{ij}$
 7. **Calculate branch length**
-   $v_{i} = 0.5 \times d_{ij} + 0.5 \times (r^{\textquotesingle}_{i} -r^{\textquotesingle}_{j})$
-   $v_{j} = 0.5 \times d_{ij} + 0.5 \times (r^{\textquotesingle}_{j}-r^{\textquotesingle}_{i})$
+   $v_{i} = 0.5 \times d_{ij} + 0.5 \times (r^{\prime}_{i} -r^{\prime}_{j})$
+   $v_{j} = 0.5 \times d_{ij} + 0.5 \times (r^{\prime}_{j}-r^{\prime}_{i})$
 8. **Upadate the distance matrix** Create a new row and column and replace the ones that match the two grouped items. The distance between the new cluster and the others terminal node is calculated as follow:
    $$d_{ij,k} = \frac{d_{ik}+d_{jk}-d_{ij}}{2}$$
 9. **Repeat** the steps from step 2 until one cluster is reached.
