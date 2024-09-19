@@ -32,21 +32,21 @@ Phylogeny reconstruction refers to inferring the evolutionary relationships amon
  
  
 ## Unweighted Pair Group Method with Arithmetic Mean (UPGMA)
-UPGMA is a clustring algorithm, join twi point into on cluster if they are near to each others.
-* Unweighted : all pairwise distances contribute equally
-* Pair Group : groups are combined in pairs (dichotomies only)
-* Arithmetic Mean : pairwise distances to each group (clade) are mean distances to all members of that group
-
-Steps: 
-1. Align & name
-2. **Mismatche matrix** compare sequences using pairwise sequence alignment and count the mismatches and records them in the mismatche matrix
-3. **Find the Closest Pair** $(i,j)$ with the smallest distance $d_{ij}$ and create a new cluster u that joins clusters $i$ and $j$.
-   *  Define the height (i.e. distance from leaves) of $u$ to be $l_{ij} := \frac{d_{ij}}{2}$
-   * The distance between two clusters $C_{i}$ and $C_{j}$ is calculated as following:
+UPGMA is a clustering algorithm, that joins two points into one cluster if they are near each other.
+* Unweighted: all pairwise distances contribute equally
+* Pair Group: groups are combined in pairs (dichotomies only)
+* Arithmetic Mean: pairwise distances to each group (clade) are mean distances to all members of that group
+Steps:
+1. **Align & name**
+2. **A mismatched matrix** compares sequences using pairwise sequence alignment and counts the mismatches and records them in the mismatch matrix
+3. **Find the Closest Pair** $(i,j)$ with the smallest distance dij and create a new cluster u that joins clusters i and j.
+* Define the height (i.e. distance from leaves) of $u$ to be $l_{ij} := \frac{d_{ij}}{2}$
+*  The distance between two clusters $C_{i}$ and $C_{j}$ is calculated as follows:
    $$d_{ij}= \frac{1}{|C_{i}|.|C_{j}|} \sum_{p \in C_{i}, q \in C_{j}} d_{pq}$$
-  
-4. **Update the Matrix** To represent the newly created cluster, replace the rows and columns that correspond to the two clustered items with a new row and column. Based on the average distance from the newly created cluster, the distances to the other objects in the matrix are computed.
-5. **Repeat** step 3 and 4 until one cluster is reached.
+
+4. **Update the Matrix**  To represent the newly created cluster, replace the rows and columns that correspond to the two clustered items with a new row and column. Based on the average distance from the newly created cluster, the distances to the other objects in the matrix are computed.
+Repeat steps 3 and 4 until one cluster is reached.
+5. **Repeat** steps 3 and 4 until one cluster is reached.
 
 The complexity of UPGMA is $O(n^{2})$: there are n-1 iterations, with $O(n)$ operations performed in each.
 
